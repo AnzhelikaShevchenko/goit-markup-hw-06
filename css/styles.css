@@ -71,6 +71,22 @@ img{
       color: var(--accent-color);
   }
 
+  .btn{
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--btn-color);
+    width: 200px;
+    height: 50px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+    }
+
 /*------------------------HEADER------------------------*/
 
 .header{
@@ -201,20 +217,7 @@ img{
 }
 
 .hero-btn {
-    font-family: inherit;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--btn-color);
-    width: 200px;
-    height: 50px;
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
     margin-top: 30px;
-    outline: none;
     border: 1px solid var(--accent-color)
 }
 
@@ -305,7 +308,7 @@ img{
 
 .item-title {
     position: absolute;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     text-align: center;
@@ -370,7 +373,7 @@ img{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
     color:var(--main-text-color);
     margin-top: 10px;
     margin-bottom: 16px;
@@ -422,7 +425,7 @@ img{
 }
 
 .clients-title{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -539,7 +542,7 @@ img{
 }
 
 .footer-title{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -620,25 +623,10 @@ img{
 }
 
 .newsletter-btn{
-    font-family: inherit;
-
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
     display: flex;
-    align-items: center;
-    text-align: center;
     justify-content: center;
-    letter-spacing: 0.06em;
-    color: var(--btn-color);
     margin-left: 12px;
-    outline: none;
-
-    width: 200px;
-    height: 50px;
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
 
 .newsletter-icon{
@@ -809,9 +797,14 @@ textarea{
 }
 
 .checkbox{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .check-icon{
@@ -821,6 +814,9 @@ textarea{
     border: 1px solid #212121;
     border-radius: 4px;
     margin-right: 8px;
+ 
+    transition-duration: 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox-label{
@@ -848,26 +844,10 @@ textarea{
 }
 
 .submit-btn {
-    font-family: inherit;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 1.9;
+    font-weight: 700;
     display: flex;
-    align-items: center;
-    text-align: center;
     justify-content: center;
-    letter-spacing: 0.06em;
-    color: var(--btn-color);
-    width: 200px;
-    height: 50px;
-    background-color: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-   
 }
-
 /*----------------PORTFOLIO-----------------*/
 
 .filter-list{
@@ -949,7 +929,6 @@ textarea{
     transition-property: transform;
     transition-duration: 250ms;
     transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
-
 
     font-size: 18px;
     line-height: 1.6;  
